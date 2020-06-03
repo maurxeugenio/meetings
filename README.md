@@ -4,22 +4,40 @@
 
 `git clone https://github.com/maurxeugenio/meetings.git`
 
-`cd backend/`
-`docker-compose build`
-`docker-compose up`
+```shell
+cd backend/
+```
+```shell
+docker-compose build
+```
+```shell
+docker-compose up
+```
 
 ## Em outro terminal
-`docker-composer exec web python app/meetings/manage.py migrate
-`docker-composer exec web python app/meetings/manage.py createsuperuser`
+```shell
+docker-composer exec web python app/meetings/manage.py migrate
+```
+```shell
+docker-composer exec web python app/meetings/manage.py createsuperuser
+```
 
 ### Aplicação Django
-http://localhost:8000/admin
+[Django Aplicação Url](http://localhost:8000/admin)
+
 
 ## Em outro terminal
 
-`cd frontend/`
-`yarn install`
-`ionic serve`
+```shell
+cd frontend/
+```
+
+```shell
+yarn install
+```
+```shell
+ionic serve
+```
 
 ### Aplicação Ionic
-http://localhost:8001
+[Ionic Aplicação Url](http://localhost:8001)
