@@ -1,0 +1,17 @@
+<ion-card *ngFor="let item of feedData; let i = index">
+  <ion-card-content>
+   <io-item>
+        <ion-avatar slot="start">
+            <ion-img [src]="item.get_image_url"></ion-img>
+        </ion-avatar>
+        <h1 [innerHTML]="item.name"></h1>
+        <div class="bottom">
+            <p [innerHTML]="item.description"></p>
+            <span>
+                Data:
+                <span [innerHTML]="item.date"></span>
+            </span>
+        </div>
+     </io-item>
+  </ion-card-content>
+</ion-card>

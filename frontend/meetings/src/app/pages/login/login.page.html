@@ -1,0 +1,23 @@
+
+<ion-content padding='true'>
+   <div class="container-login">
+        <div class="center">
+            <img src="assets/images/meeting.png" class="smallLogo"/>
+        <h1>Entrar</h1>
+        </div>
+        <form>
+            <ion-list>
+                <ion-item>
+                    <ion-label position="stacked">Usuário</ion-label>
+                    <ion-input autocomplete="off" type="text" name="username" [(ngModel)]="postData.username"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="stacked">Senha</ion-label>
+                    <ion-input autocomplete="off" type="password" name="password" [(ngModel)]="postData.password"></ion-input>
+                </ion-item>
+            </ion-list>
+            <ion-button expand="block" share="round" color="success" (click)="loginAction()">Login</ion-button>
+        </form>
+   </div>
+</ion-content>
